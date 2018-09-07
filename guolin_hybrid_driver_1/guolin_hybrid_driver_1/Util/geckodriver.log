@@ -1,0 +1,46 @@
+1532074481823	geckodriver	INFO	geckodriver 0.20.1
+1532074481870	geckodriver	INFO	Listening on 127.0.0.1:57694
+1532074484768	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Firefox\\F55\\F\\firefox.exe" "-marionette" "-profile" "C:\\Users\\64848\\AppData\\Local\\Temp\\rust_mozprofile.y5QlgK1W9eos"
+Unable to read VR Path Registry from C:\Users\64848\AppData\Local\openvr\openvrpaths.vrpath
+1532074486962	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\64848\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\64848\AppData\Local\openvr\openvrpaths.vrpath
+1532074489621	Marionette	INFO	Listening on port 57702
+1532074489668	Marionette	INFO	Listening on port 57702
+1532074490019	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532074490081	Marionette	DEBUG	loaded listener.js
+1532074490156	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1532074490589	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1532074490589	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1532074491022	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.126.com/"
+1532074491029	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.126.com/"
+1532074491035	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.126.com/"
+1532074491037	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.126.com/"
+1532074491321	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.126.com/"
+1532074491772	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.126.com/"
+1532074497257	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1532074500638	Marionette	DEBUG	Received DOM event "hashchange" for "https://mail.126.com/js6/main.jsp?sid=mAOFQIDBtIeXbvjUZDBBkxJmYRzdvsIe&df=mail126_letter#module=contact.ContactModule%7C%7B%7D"
+1532074500954	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript warning: https://s3.music.126.net/web/s/core.js?1d385fc9b72ab8689271776180a2fbaa, line 94: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer.js?9a2318c5524dde5936a6d8fefeddeed7, line 11: unreachable code after return statement
+JavaScript warning: https://s3.music.126.net/web/s/pt_musicbox_mailplayer.js?9a2318c5524dde5936a6d8fefeddeed7, line 11: unreachable code after return statement
+[GPU 9036] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 6852] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8368] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8368] WARNING: p
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+hannel error: cannot send/recv
+
+ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+rome/common/ipc_channel_win.cc, line 346
+[Child 8548] WARNING: pipe error: 109:[Parent 10816] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 30928] WA
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
