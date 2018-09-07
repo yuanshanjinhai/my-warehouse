@@ -8,6 +8,6 @@ The my interface_2(more process) is also an interface framework. JSON is typed b
 I hope my code can help you. 
 
 chinese:
-guolin_hybrid_driver_1是一个混合驱动框架，里面有中文的说明文档;interface_1是一个接口框架，json是在程序里拼的;my interface_2(more process)也是一个接口框架，json是在用例力输入的，并且代码里有详细的注释，应该可以帮助大家看懂程序
+guolin_hybrid_driver_1是一个混合驱动框架，里面有中文的说明文档。interface_1是一个接口框架，json是在程序里拼的。my interface_2(more process)也是一个接口框架，json是在用例力输入的，并且代码里有详细的注释，应该可以帮助大家看懂程序。
 
 希望我的代码可以帮到大家
