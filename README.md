@@ -45,6 +45,6 @@ This is a hybrid driver interface framework. Its use case document is an Excel. 
 
 My interface_2 (more process):
 
-This is also a hybrid driver interface framework, but also one of the most complex of these, its use case is still Excel, users need to write a good use case to the server's JSON string, the program will return the server's JSON string for various judgments, and write the results to the use case Excel and various logs. 
+This is also a hybrid driver interface framework, but also one of the most complex of these, its use case is still Excel, users need to write a good use case to the server's JSON string, the program will return the server's JSON string for various judgments, and write the results to the use case Excel and various logs. I wrote detailed Chinese annotations in this set of code. 
 
-I wrote detailed Chinese annotations in this set of code. 
+I hope my sharing can help you. 
