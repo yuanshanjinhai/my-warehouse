@@ -1,4 +1,4 @@
-# coding=utf-8
+﻿# coding=utf-8
 from ProjectVar.var import *
 import ConfigParser
 from Util.md5_password import *
@@ -29,7 +29,7 @@ def generaljudg(ex,row,result_dict):
                             error_str += str(option_value_list[0])+":"+"未匹配出结果；"
                             #write_tem_error_str(error_str)
                     except:
-                        print "第" + str(row - 1) + "条用例的配置文件值" + option_value_list[0] + "在返回值中找不到"
+                        print "第" + str(row - 1) + "条用例对应的配置文件值" + option_value_list[0] + "在返回值中找不到"
                         sys.exit()
 
                 if cf.get(isc,iopt)[0]=="!": # 如果配置文件值的第一个字符为！，则表示这个值是服务器从输入值里取到的，判断其对错需要到Excel中比对
@@ -50,7 +50,7 @@ def generaljudg(ex,row,result_dict):
                             error_str += str(option_value_list[0]) + ":" + "返回值与输入值不符；"
                             #write_tem_error_str(error_str)
                     except:
-                        print "第" + str(row - 1) + "条用例的配置文件值" + option_value_list[0] + "在返回值中找不到"
+                        print "第" + str(row - 1) + "条用例对应的配置文件值" + option_value_list[0] + "在返回值中找不到"
                         sys.exit()
 
     if result_digit==0:
