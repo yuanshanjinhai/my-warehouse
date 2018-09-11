@@ -29,21 +29,28 @@ def generaljudg(ex,row,result_dict):
                             error_str += str(option_value_list[0])+":"+"未匹配出结果；"
                             #write_tem_error_str(error_str)
                     except:
-                        print "第" + str(row - 1) + "条用例的返回值" + option_value_list[0] + "1在配置文件中找不到"
+                        print "第" + str(row - 1) + "条用例的配置文件值" + option_value_list[0] + "在返回值中找不到"
                         sys.exit()
 
                 if cf.get(isc,iopt)[0]=="!": # 如果配置文件值的第一个字符为！，则表示这个值是服务器从输入值里取到的，判断其对错需要到Excel中比对
                     option_value_list=cf.get(isc,iopt)[1::].split("~")
                     try:
-                        # 如果result_dict+tem_list[0]所组成的层级结构下的值等于用正则从ExcelG列中匹配出来的值，说明服务器返回正确
-                        if eval('result_dict'+option_value_list[0])==re.findall(eval(option_value_list[1]),str(ex.get_value("G"+str(row))))[0]:
+                        # 这个if是用来兼容用例里输入的json的username本来就为空的情况，由于服务器返回的是unicode格式，所以需要[u'']，它代表username为空
+                        if [eval('result_dict'+option_value_list[0])]==[u''] and re.findall(eval(option_value_list[1]),str(ex.get_value("G"+str(row))))==[]:
                             pass
+                        # 如果result_dict+tem_list[0]所组成的层级结构下的值等于用正则从ExcelG列中匹配出来的值，说明服务器返回正确
+                        elif re.findall(eval(option_value_list[1]),str(ex.get_value("G"+str(row))))<>[]:
+                            if eval('result_dict'+option_value_list[0])==re.findall(eval(option_value_list[1]),str(ex.get_value("G"+str(row))))[0]:
+                                pass
+                            else:
+                                result_digit = 1
+                                error_str += str(option_value_list[0]) + ":" + "返回值与输入值不符；"
                         else:
                             result_digit = 1
                             error_str += str(option_value_list[0]) + ":" + "返回值与输入值不符；"
                             #write_tem_error_str(error_str)
                     except:
-                        print "第" + str(row - 1) + "条用例的返回值" + option_value_list[0] + "2在配置文件中找不到"
+                        print "第" + str(row - 1) + "条用例的配置文件值" + option_value_list[0] + "在返回值中找不到"
                         sys.exit()
 
     if result_digit==0:

@@ -28,7 +28,7 @@ def deletejudg(result_dict):
             else:
                 result_dict=1
                 error_str = "userid" + "返回值与输入值不符；"
-                write_tem_error_str(error_str)
+                #write_tem_error_str(error_str)
 
         if iopt=="articleId":
             option_value_list = cf.get("delete",iopt)[1::].split("~")
